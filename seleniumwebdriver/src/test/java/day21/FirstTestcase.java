@@ -26,6 +26,7 @@ public class FirstTestcase {
 		
 		driver.get("https://demo.opencart.com.gr/");
 		
+		
 		//3) Validate title should be "Your Store"
 		
 		String act_title=driver.getTitle();
