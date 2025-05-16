@@ -31,6 +31,8 @@ public class FrameAssignment {
 		    //driver.switchTo().frame(0); //switch to inner frame
 		    boolean logo_img=driver.findElement(By.xpath("//img[@alt='Ui.Vision by a9t9 software - Image-Driven Automation']")).isDisplayed();
 		    System.out.println("Logo status is present in iframe5:"+logo_img);
+		    
+		    driver.quit();
 		   
 
 	}

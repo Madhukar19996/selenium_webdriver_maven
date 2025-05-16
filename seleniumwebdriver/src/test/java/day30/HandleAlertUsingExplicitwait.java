@@ -25,6 +25,8 @@ public class HandleAlertUsingExplicitwait {
 		 Alert myalert=mywait.until(ExpectedConditions.alertIsPresent());// Capture alertbox using explicit wait 
 		 
 		 myalert.accept();
+		 
+		 driver.quit();
 
 	}
 
