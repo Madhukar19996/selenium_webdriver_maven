@@ -74,7 +74,7 @@ public class StaticTable {
 			 total=total+Integer.parseInt(Price);
 			 
 		}
-		 System.out.println("Total number  prices of all books:"+total);
+		 System.out.println("Total number  prices of all books:"+total); //7100
 		
 		
 		
