@@ -1,6 +1,7 @@
 package day32;
 
 import java.time.Duration;
+import java.util.Arrays;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
@@ -40,22 +41,44 @@ public class AssignmentStatic {
 		
 		//1) Find total number of rows in a table 
 		
-		int rows=driver.findElements(By.tagName("tr")).size(); // Single table in a web page 
-		System.out.println("Number of Rows in Table:"+rows); //6
+		int rows=driver.findElements(By.xpath("//table[@class='table']//tbody//tr")).size(); // Single table in a web page 
+		System.out.println("Number of Rows in Table:"+rows); //5
 		
 		
 		//3) Read data from price column 
-		
-		 for(int r=1;r<=5;r++)
+		 String priceArr[]=new String[rows]; //0-4
+		 for(int r=1;r<=rows;r++)
 		 {
 			 String price=driver.findElement(By.xpath("//table[@class='table']//tr["+r+"]//td[6]")).getText();
-			 System.out.println("Data of Price Column:"+price);
+			 priceArr[r-1]=price; //adding price into the array 
 			 
 		}
 		 
-		//choose the lowest price
-		  driver.findElement(By.xpath("//table[@class='table']//tr[3]//td[1]")).click();
-		  
+		// Sort prices the find lower price value 
+		 for(String arrvalue:priceArr) 
+		 {
+			 System.out.println(arrvalue);
+		 }
+		 
+		 Arrays.sort(priceArr); // This will able to sort strings, so no need to convert to number
+		 int sz  = priceArr.length;
+		 String lowestprice=priceArr[0];
+		 String highestprice=priceArr[sz-1];
+		 System.out.println("Lowest price:"+lowestprice);
+		 System.out.println("Highest price:"+highestprice);
+		 
+		// Find record in table having lower price
+		   for(int r=1; r<=rows;r++ )
+		   {
+			   String price=driver.findElement(By.xpath("//table[@class='table']//tr["+r+"]//td[6]")).getText(); 
+			   
+			   if(price.equals(highestprice))
+			   {
+				   driver.findElement(By.xpath("//table[@class='table']//tbody//tr["+r+"]/td[1]//input")).click();
+				   break;
+			   }
+		   }
+		 
 		// Fill the personal details 
 		  
 		  driver.findElement(By.xpath("//input[@id='inputName']")).sendKeys("Madhukar Pandey");
@@ -73,10 +96,10 @@ public class AssignmentStatic {
 		  driver.findElement(By.xpath("//input[@id='zipCode']")).sendKeys("202456");
 		  Thread.sleep(1000);
 		  
-			WebElement carttype=driver.findElement(By.xpath("//select[@id='cardType']"));
+		  WebElement carttype=driver.findElement(By.xpath("//select[@id='cardType']"));
 			
-			Select cardname=new Select(carttype);
-			Thread.sleep(1000);
+		  Select cardname=new Select(carttype);
+		  Thread.sleep(1000);
 			  
 			cardname.selectByVisibleText("Visa");
 		  

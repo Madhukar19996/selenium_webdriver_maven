@@ -108,7 +108,7 @@ public class DatePickerDemo {
 		
 		//2) Using date picker element 
 		// Expected data
-		String year="2024";
+		String year="2026";
 		String month="June";
 		String date="19";
 		
@@ -119,7 +119,7 @@ public class DatePickerDemo {
 		
 	
     
-		driver.quit();
+		driver.quit();  // This method is used for quit window
  }
 	
 }

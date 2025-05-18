@@ -1,6 +1,9 @@
 package day33;
 
+
 import java.time.Duration;
+import java.util.ArrayList;
+import java.util.List;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
@@ -21,20 +24,39 @@ public class AssignmentPaginationWebtable {
 		
 		Thread.sleep(3000);
 		
-		//int total_pages=Integer.parseInt(substring(text.indexOf("(")+1,text.indexOf("Pages")-1));
-		
-		for(int p=1;p<=4;p++)
+		int total_page=driver.findElements(By.xpath("//*[@class='pagination']//a")).size();
+			
+		for(int p=1;p<=total_page;p++)
 		 {
 					
 			if(p>1)
 			{
-				WebElement active_page=driver.findElement(By.xpath("//ul[@class='pagination']//a"));
-				active_page.click();
+				WebElement total_pages=driver.findElement(By.xpath("//ul[@class='pagination']//li["+p+"]//a"));
+				total_pages.click();
 				Thread.sleep(3000);
 			}
 			
+            //reading data from the page
+			
+			int noOfRows=driver.findElements(By.xpath("//table[@id='productTable']//tbody//tr")).size();
+			
+			System.out.println("Name"+" === "+"Price");
+			
+            for(int r=1;r<=noOfRows;r++)
+				
+			{   
+            	String name=driver.findElement(By.xpath("//table[@id='productTable']//tbody//tr["+r+"]//td[2]")).getText();
+            	String price=driver.findElement(By.xpath("//table[@id='productTable']//tbody//tr["+r+"]//td[3]")).getText();
+            	driver.findElement(By.xpath("//table[@id='productTable']//tbody//tr["+r+"]//td[4]//input")).click();
+				System.out.println(name+" === "+price);
+				
+			}
+			
+			
 		
-	}
+	   }
+		
+		driver.quit();
 
-}
-}
+     }
+ }
