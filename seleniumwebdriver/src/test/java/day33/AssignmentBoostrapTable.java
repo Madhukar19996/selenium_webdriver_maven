@@ -17,8 +17,8 @@ public class AssignmentBoostrapTable {
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
 		
 		//Logins Steps 
-		driver.findElement(By.xpath("//input[@placeholder='使用者名稱']")).sendKeys("Admin");
-		driver.findElement(By.xpath("//input[@placeholder='密碼']")).sendKeys("admin123");
+		driver.findElement(By.xpath("//input[@placeholder='Username']")).sendKeys("Admin");
+		driver.findElement(By.xpath("//input[@placeholder='Password']")).sendKeys("admin123");
 		driver.findElement(By.xpath("//button[@type='submit']")).click();
 		
 		
@@ -37,11 +37,11 @@ public class AssignmentBoostrapTable {
 			String Username=driver.findElement(By.xpath("//*[@role='table']//div//div["+r+"]//div//div[2]")).getText();
         	String Userrole=driver.findElement(By.xpath("//*[@role='table']//div//div["+r+"]//div//div[3]")).getText();
         	
-			System.out.println(Username+" === "+Userrole);
+			System.out.println(+r+"). "+Username+" === "+Userrole);
 			
 		}
 			
-		
+		driver.quit();
 
 	}
 
