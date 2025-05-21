@@ -1,10 +1,12 @@
 package day36;
 
 import java.time.Duration;
+
 import java.util.ArrayList;
 import java.util.List;
 
 import org.openqa.selenium.By;
+import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -35,14 +37,20 @@ public class OpenTheLinkinTab {
 		  
 		 driver.switchTo().window(ids.get(1)); //switch to MyAccountPage page
 		 
+		
 		 driver.findElement(By.xpath("//a[normalize-space()='Software']")).click();
 		 
 		//HomePage
 		 driver.switchTo().window(ids.get(0)); //switch to HomePage
 		 
-		 WebElement Inputbox= driver.findElement(By.xpath("//input[@placeholder='Search']"));
-		 Thread.sleep(3000);
-		 Inputbox.sendKeys("MacBook");
+		 WebElement Inputbox= driver.findElement(By.name("search"));
+		 
+		 JavascriptExecutor js= (JavascriptExecutor)driver;
+		 //JavascriptExecutor js= driver;
+		 
+		 js.executeScript("arguments[0].setAttribute('value','MacBook')",Inputbox);
+		 
+		 driver.findElement(By.xpath("//button[@class='btn btn-default btn-lg']")).click();
 		 
 
 	}
