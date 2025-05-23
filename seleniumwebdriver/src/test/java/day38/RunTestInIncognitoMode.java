@@ -1,18 +1,15 @@
 package day38;
 
+import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
-import org.openqa.selenium.WebDriver;
 
-
-
-
-public class HeadLessTesting {
+public class RunTestInIncognitoMode {
 
 	public static void main(String[] args) {
-        
+		
 		ChromeOptions options= new ChromeOptions();
-		options.addArguments("--headless=new");  // Setting for headless mode execution 
+		options.addArguments("--incognito");  // Setting for incognito mode execution 
 		
 		WebDriver driver =new ChromeDriver(options);
 		

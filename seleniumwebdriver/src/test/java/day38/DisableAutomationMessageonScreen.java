@@ -1,18 +1,17 @@
 package day38;
 
+import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
-import org.openqa.selenium.WebDriver;
 
-
-
-
-public class HeadLessTesting {
+public class DisableAutomationMessageonScreen {
 
 	public static void main(String[] args) {
-        
+		
+		
 		ChromeOptions options= new ChromeOptions();
-		options.addArguments("--headless=new");  // Setting for headless mode execution 
+		
+		options.setExperimentalOption("excludeSwitches", new String[] {"enable-automation"});
 		
 		WebDriver driver =new ChromeDriver(options);
 		
@@ -34,8 +33,6 @@ public class HeadLessTesting {
 		}
 		  driver.quit();
 
-
-
-	}
+  }
 
 }
