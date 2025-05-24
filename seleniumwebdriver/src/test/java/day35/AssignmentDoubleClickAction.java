@@ -27,7 +27,7 @@ public class AssignmentDoubleClickAction {
 		WebElement field2=driver.findElement(By.xpath("//input[@id='field2']"));
 		WebElement button=driver.findElement(By.xpath("//button[normalize-space()='Copy Text']"));
 		
-		field1.clear();
+		field1.clear(); //clear box1 
 		
 		field1.sendKeys("Selenium With Java ");
 		
@@ -35,10 +35,10 @@ public class AssignmentDoubleClickAction {
 		
 		act.doubleClick(button).perform();
 		Thread.sleep(3000);
-		 String text=field2.getDomAttribute("value");
+		 String text=field2.getAttribute("value");
 		 System.out.println("Captured value is:"+text);
 		
-		if(text.equals("Selenium With Java"))
+		if(text.equals("Selenium With Java "))
 		{
 			System.out.println("Test case Passed");
 		}
