@@ -1,43 +1,61 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="7" passed="7" failed="0" skipped="0">
+<testng-results ignored="0" total="2" passed="2" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-05-27T08:59:25 IST" name="mysuite" finished-at="2025-05-27T08:59:50 IST" duration-ms="24791">
+  <suite started-at="2025-05-28T09:09:50 IST" name="Suite" finished-at="2025-05-28T09:09:50 IST" duration-ms="71">
     <groups>
     </groups>
-    <test started-at="2025-05-27T08:59:25 IST" name="mt tests" finished-at="2025-05-27T08:59:50 IST" duration-ms="24791">
-      <class name="day42.OrangeHRMTest">
-        <test-method signature="openapp()[pri:1, instance:day42.OrangeHRMTest@33d512c1]" started-at="2025-05-27T08:59:25 IST" name="openapp" finished-at="2025-05-27T08:59:39 IST" duration-ms="13383" status="PASS">
+    <test started-at="2025-05-28T09:09:50 IST" name="Test" finished-at="2025-05-28T09:09:50 IST" duration-ms="71">
+      <class name="day43.AllAnnotations">
+        <test-method is-config="true" signature="bs()[pri:0, instance:day43.AllAnnotations@5bda8e08]" started-at="2025-05-28T09:09:50 IST" name="bs" finished-at="2025-05-28T09:09:50 IST" duration-ms="9" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- openapp -->
-        <test-method signature="logopresence()[pri:2, instance:day42.OrangeHRMTest@33d512c1]" started-at="2025-05-27T08:59:39 IST" name="logopresence" finished-at="2025-05-27T08:59:42 IST" duration-ms="3092" status="PASS">
+        </test-method> <!-- bs -->
+        <test-method is-config="true" signature="bt()[pri:0, instance:day43.AllAnnotations@5bda8e08]" started-at="2025-05-28T09:09:50 IST" name="bt" finished-at="2025-05-28T09:09:50 IST" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- logopresence -->
-        <test-method signature="login()[pri:3, instance:day42.OrangeHRMTest@33d512c1]" started-at="2025-05-27T08:59:42 IST" name="login" finished-at="2025-05-27T08:59:44 IST" duration-ms="2289" status="PASS">
+        </test-method> <!-- bt -->
+        <test-method is-config="true" signature="bc()[pri:0, instance:day43.AllAnnotations@5bda8e08]" started-at="2025-05-28T09:09:50 IST" name="bc" finished-at="2025-05-28T09:09:50 IST" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- login -->
-        <test-method signature="logout()[pri:4, instance:day42.OrangeHRMTest@33d512c1]" started-at="2025-05-27T08:59:44 IST" name="logout" finished-at="2025-05-27T08:59:50 IST" duration-ms="5921" status="PASS">
+        </test-method> <!-- bc -->
+        <test-method is-config="true" signature="bm()[pri:0, instance:day43.AllAnnotations@5bda8e08]" started-at="2025-05-28T09:09:50 IST" name="bm" finished-at="2025-05-28T09:09:50 IST" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- logout -->
-      </class> <!-- day42.OrangeHRMTest -->
-      <class name="day42.FirstTestcase">
-        <test-method signature="openapp()[pri:10, instance:day42.FirstTestcase@2d3379b4]" started-at="2025-05-27T08:59:50 IST" name="openapp" finished-at="2025-05-27T08:59:50 IST" duration-ms="4" status="PASS">
+        </test-method> <!-- bm -->
+        <test-method signature="tm1()[pri:1, instance:day43.AllAnnotations@5bda8e08]" started-at="2025-05-28T09:09:50 IST" name="tm1" finished-at="2025-05-28T09:09:50 IST" duration-ms="5" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- openapp -->
-        <test-method signature="login()[pri:12, instance:day42.FirstTestcase@2d3379b4]" started-at="2025-05-27T08:59:50 IST" name="login" finished-at="2025-05-27T08:59:50 IST" duration-ms="5" status="PASS">
+        </test-method> <!-- tm1 -->
+        <test-method is-config="true" signature="am()[pri:0, instance:day43.AllAnnotations@5bda8e08]" started-at="2025-05-28T09:09:50 IST" name="am" finished-at="2025-05-28T09:09:50 IST" duration-ms="0" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- login -->
-        <test-method signature="logout()[pri:30, instance:day42.FirstTestcase@2d3379b4]" started-at="2025-05-27T08:59:50 IST" name="logout" finished-at="2025-05-27T08:59:50 IST" duration-ms="1" status="PASS">
+        </test-method> <!-- am -->
+        <test-method is-config="true" signature="bm()[pri:0, instance:day43.AllAnnotations@5bda8e08]" started-at="2025-05-28T09:09:50 IST" name="bm" finished-at="2025-05-28T09:09:50 IST" duration-ms="0" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- logout -->
-      </class> <!-- day42.FirstTestcase -->
-    </test> <!-- mt tests -->
-  </suite> <!-- mysuite -->
+        </test-method> <!-- bm -->
+        <test-method signature="tm2()[pri:2, instance:day43.AllAnnotations@5bda8e08]" started-at="2025-05-28T09:09:50 IST" name="tm2" finished-at="2025-05-28T09:09:50 IST" duration-ms="3" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tm2 -->
+        <test-method is-config="true" signature="am()[pri:0, instance:day43.AllAnnotations@5bda8e08]" started-at="2025-05-28T09:09:50 IST" name="am" finished-at="2025-05-28T09:09:50 IST" duration-ms="2" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- am -->
+        <test-method is-config="true" signature="ac()[pri:0, instance:day43.AllAnnotations@5bda8e08]" started-at="2025-05-28T09:09:50 IST" name="ac" finished-at="2025-05-28T09:09:50 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ac -->
+        <test-method is-config="true" signature="at()[pri:0, instance:day43.AllAnnotations@5bda8e08]" started-at="2025-05-28T09:09:50 IST" name="at" finished-at="2025-05-28T09:09:50 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- at -->
+        <test-method is-config="true" signature="as()[pri:0, instance:day43.AllAnnotations@5bda8e08]" started-at="2025-05-28T09:09:50 IST" name="as" finished-at="2025-05-28T09:09:50 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- as -->
+      </class> <!-- day43.AllAnnotations -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
 </testng-results>
