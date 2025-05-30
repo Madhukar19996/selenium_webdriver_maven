@@ -1,49 +1,117 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="2" total="8" passed="6" failed="0" skipped="0">
+<testng-results ignored="0" total="9" passed="9" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-05-29T17:36:36 IST" name="groupingsuite" finished-at="2025-05-29T17:36:37 IST" duration-ms="100">
+  <suite started-at="2025-05-30T14:55:22 IST" name="Suite" finished-at="2025-05-30T14:55:44 IST" duration-ms="22601">
     <groups>
-      <group name="regression">
-        <method signature="SignUpTest.Signupbyemail()[pri:1, instance:day44.SignUpTest@74235045]" name="Signupbyemail" class="day44.SignUpTest"/>
-        <method signature="SignUpTest.Signupbyfacebook()[pri:2, instance:day44.SignUpTest@74235045]" name="Signupbyfacebook" class="day44.SignUpTest"/>
-        <method signature="SignUpTest.Signupbytwitter()[pri:3, instance:day44.SignUpTest@74235045]" name="Signupbytwitter" class="day44.SignUpTest"/>
-      </group> <!-- regression -->
-      <group name="sanity">
-        <method signature="LoginTests.loginbyemail()[pri:1, instance:day44.LoginTests@3590fc5b]" name="loginbyemail" class="day44.LoginTests"/>
-        <method signature="LoginTests.loginbyfacebook()[pri:2, instance:day44.LoginTests@3590fc5b]" name="loginbyfacebook" class="day44.LoginTests"/>
-        <method signature="LoginTests.loginbytwitter()[pri:3, instance:day44.LoginTests@3590fc5b]" name="loginbytwitter" class="day44.LoginTests"/>
-      </group> <!-- sanity -->
     </groups>
-    <test started-at="2025-05-29T17:36:36 IST" name="GroupingTest" finished-at="2025-05-29T17:36:37 IST" duration-ms="100">
-      <class name="day44.LoginTests">
-        <test-method signature="loginbyemail()[pri:1, instance:day44.LoginTests@3590fc5b]" started-at="2025-05-29T17:36:37 IST" name="loginbyemail" finished-at="2025-05-29T17:36:37 IST" duration-ms="15" status="PASS">
+    <test started-at="2025-05-30T14:55:22 IST" name="ChromeTest" finished-at="2025-05-30T14:55:38 IST" duration-ms="16161">
+      <class name="day45.ParamTest">
+        <test-method is-config="true" signature="setup(java.lang.String,java.lang.String)[pri:0, instance:day45.ParamTest@5bda8e08]" started-at="2025-05-30T14:55:22 IST" name="setup" finished-at="2025-05-30T14:55:34 IST" duration-ms="12030" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[https://opensource-demo.orangehrmlive.com/web/index.php/auth/login]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- loginbyemail -->
-        <test-method signature="loginbyfacebook()[pri:2, instance:day44.LoginTests@3590fc5b]" started-at="2025-05-29T17:36:37 IST" name="loginbyfacebook" finished-at="2025-05-29T17:36:37 IST" duration-ms="1" status="PASS">
+        </test-method> <!-- setup -->
+        <test-method signature="test_logo()[pri:1, instance:day45.ParamTest@5bda8e08]" started-at="2025-05-30T14:55:34 IST" name="test_logo" finished-at="2025-05-30T14:55:37 IST" duration-ms="3229" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- loginbyfacebook -->
-        <test-method signature="loginbytwitter()[pri:3, instance:day44.LoginTests@3590fc5b]" started-at="2025-05-29T17:36:37 IST" name="loginbytwitter" finished-at="2025-05-29T17:36:37 IST" duration-ms="1" status="PASS">
+        </test-method> <!-- test_logo -->
+        <test-method signature="test_title()[pri:2, instance:day45.ParamTest@5bda8e08]" started-at="2025-05-30T14:55:37 IST" name="test_title" finished-at="2025-05-30T14:55:37 IST" duration-ms="28" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- loginbytwitter -->
-      </class> <!-- day44.LoginTests -->
-      <class name="day44.SignUpTest">
-        <test-method signature="Signupbyemail()[pri:1, instance:day44.SignUpTest@74235045]" started-at="2025-05-29T17:36:37 IST" name="Signupbyemail" finished-at="2025-05-29T17:36:37 IST" duration-ms="1" status="PASS">
+        </test-method> <!-- test_title -->
+        <test-method signature="test_URL()[pri:3, instance:day45.ParamTest@5bda8e08]" started-at="2025-05-30T14:55:37 IST" name="test_URL" finished-at="2025-05-30T14:55:37 IST" duration-ms="28" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- Signupbyemail -->
-        <test-method signature="Signupbyfacebook()[pri:2, instance:day44.SignUpTest@74235045]" started-at="2025-05-29T17:36:37 IST" name="Signupbyfacebook" finished-at="2025-05-29T17:36:37 IST" duration-ms="3" status="PASS">
+        </test-method> <!-- test_URL -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:day45.ParamTest@5bda8e08]" started-at="2025-05-30T14:55:37 IST" name="teardown" finished-at="2025-05-30T14:55:38 IST" duration-ms="780" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- Signupbyfacebook -->
-        <test-method signature="Signupbytwitter()[pri:3, instance:day44.SignUpTest@74235045]" started-at="2025-05-29T17:36:37 IST" name="Signupbytwitter" finished-at="2025-05-29T17:36:37 IST" duration-ms="2" status="PASS">
+        </test-method> <!-- teardown -->
+      </class> <!-- day45.ParamTest -->
+    </test> <!-- ChromeTest -->
+    <test started-at="2025-05-30T14:55:22 IST" name="EdgeTest" finished-at="2025-05-30T14:55:39 IST" duration-ms="17339">
+      <class name="day45.ParamTest">
+        <test-method is-config="true" signature="setup(java.lang.String,java.lang.String)[pri:0, instance:day45.ParamTest@3d34d211]" started-at="2025-05-30T14:55:22 IST" name="setup" finished-at="2025-05-30T14:55:34 IST" duration-ms="11805" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[edge]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[https://opensource-demo.orangehrmlive.com/web/index.php/auth/login]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- Signupbytwitter -->
-      </class> <!-- day44.SignUpTest -->
-    </test> <!-- GroupingTest -->
-  </suite> <!-- groupingsuite -->
+        </test-method> <!-- setup -->
+        <test-method signature="test_logo()[pri:1, instance:day45.ParamTest@3d34d211]" started-at="2025-05-30T14:55:34 IST" name="test_logo" finished-at="2025-05-30T14:55:37 IST" duration-ms="3263" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test_logo -->
+        <test-method signature="test_title()[pri:2, instance:day45.ParamTest@3d34d211]" started-at="2025-05-30T14:55:37 IST" name="test_title" finished-at="2025-05-30T14:55:37 IST" duration-ms="55" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test_title -->
+        <test-method signature="test_URL()[pri:3, instance:day45.ParamTest@3d34d211]" started-at="2025-05-30T14:55:37 IST" name="test_URL" finished-at="2025-05-30T14:55:37 IST" duration-ms="40" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test_URL -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:day45.ParamTest@3d34d211]" started-at="2025-05-30T14:55:37 IST" name="teardown" finished-at="2025-05-30T14:55:39 IST" duration-ms="2104" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+      </class> <!-- day45.ParamTest -->
+    </test> <!-- EdgeTest -->
+    <test started-at="2025-05-30T14:55:22 IST" name="FirefoxTest" finished-at="2025-05-30T14:55:44 IST" duration-ms="22601">
+      <class name="day45.ParamTest">
+        <test-method is-config="true" signature="setup(java.lang.String,java.lang.String)[pri:0, instance:day45.ParamTest@4009e306]" started-at="2025-05-30T14:55:22 IST" name="setup" finished-at="2025-05-30T14:55:40 IST" duration-ms="18351" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[firefox]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[https://opensource-demo.orangehrmlive.com/web/index.php/auth/login]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="test_logo()[pri:1, instance:day45.ParamTest@4009e306]" started-at="2025-05-30T14:55:40 IST" name="test_logo" finished-at="2025-05-30T14:55:43 IST" duration-ms="3092" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test_logo -->
+        <test-method signature="test_title()[pri:2, instance:day45.ParamTest@4009e306]" started-at="2025-05-30T14:55:43 IST" name="test_title" finished-at="2025-05-30T14:55:43 IST" duration-ms="34" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test_title -->
+        <test-method signature="test_URL()[pri:3, instance:day45.ParamTest@4009e306]" started-at="2025-05-30T14:55:43 IST" name="test_URL" finished-at="2025-05-30T14:55:43 IST" duration-ms="11" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test_URL -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:day45.ParamTest@4009e306]" started-at="2025-05-30T14:55:43 IST" name="teardown" finished-at="2025-05-30T14:55:44 IST" duration-ms="1036" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+      </class> <!-- day45.ParamTest -->
+    </test> <!-- FirefoxTest -->
+  </suite> <!-- Suite -->
 </testng-results>
